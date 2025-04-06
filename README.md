@@ -1,4 +1,4 @@
-# Welcome to your Lovable Project
+# Welcome to AayushGame-verse-explorer
 
 ## Project Info
 
