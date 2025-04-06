@@ -1,52 +1,84 @@
-# Welcome to AayushGame-verse-explorer
+# 🎮 AayushGame Verse - Game Discovery Platform
 
-## Project Info
+A fully responsive front-end web application to discover video games using the RAWG API. Built with React, Redux, React-Bootstrap, Clerk Auth, and Vanilla CSS.
 
-This project is a web application built using modern web development technologies. It is designed to provide a seamless user experience with a focus on performance and scalability.
+## 📌 Tech Stack
 
-## Features
+- ⚛️ **React** (Functional Components + Hooks)
+- 🧠 **Redux** (State Management)
+- 🔐 **Clerk Auth** (Authentication)
+- 🎨 **Bootstrap & React-Bootstrap**
+- 💅 **Vanilla CSS**
 
-- Fast and responsive user interface
-- Built with TypeScript for type safety
-- Styled using Tailwind CSS for modern and customizable designs
-- Component-based architecture with React
-- UI components powered by shadcn-ui
+## 📂 Project Features
 
-## Folder Structure
+1. **🏠 Main Page Layout**
+   - Header with logo, search bar, and favorites section.
+   - Sidebar for filter options including:
+     - Category
+     - Tags
+     - Release Year
+     - Popularity
+   - Main hero section displaying a grid of game cards with:
+     - Game image
+     - Description
+     - Tags
+     - Category
+     - Ratings
 
-```
-<project-root>
-├── public/          # Static assets (e.g., images, icons)
-├── src/             # Source code
-│   ├── components/  # Reusable React components
-│   ├── pages/       # Page components
-│   ├── styles/      # Global and component-specific styles
-│   ├── utils/       # Utility functions
-│   └── App.tsx      # Main application component
-├── package.json     # Project metadata and dependencies
-├── vite.config.ts   # Vite configuration file
-└── README.md        # Project documentation
-```
+2. **🧮 Filtering**
+   - Dynamic updates to the game list based on selected filters.
+   - Loading spinners or skeletons displayed while fetching data.
+   - Filters available for:
+     - Category
+     - Tags
+     - Release Year
+     - Popularity
 
-## How Can I Edit This Code?
+3. **🔍 Real-Time Search**
+   - Responsive search bar that updates the game list in real time as the user types.
 
-There are several ways to edit your application:
+4. **📄 Pagination**
+   - Efficient handling of large game lists using pagination for easy navigation.
 
+5. **📘 Game Detail Page**
+   - Detailed view of a game when a card is clicked, showing:
+     - Game Title
+     - Full Description
+     - Screenshots
+     - Ratings
+     - Pricing (if available)
+     - System Requirements
 
-### Use Your Preferred IDE
+6. **🔐 Clerk Authentication**
+   - User sign up, login, and logout functionality using Clerk.
+   - Access to the favorites section restricted to authenticated users.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+7. **❤️ State Management (Redux)**
+   - Management of favorite/bookmarked games with features to:
+     - Add/Remove games from favorites.
+     - Persist favorites across sessions (using local storage or backend).
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## 📱 Responsiveness
 
-Follow these steps:
+The application is fully responsive and functions seamlessly across devices (mobile, tablet, desktop).
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧑‍💻 Best Practices
+
+- Use functional components and hooks only (no class components).
+- Keep code clean, modular, and maintainable.
+- Use proper state management across components.
+- Organize files with a scalable folder structure.
+- Handle edge cases and loading/error states properly.
+
+## 🚀 Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/aayushsh2003/AayushGame-Verse.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd AayushGame-Verse
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -76,20 +108,12 @@ This project is built with:
 - **Vite**: A fast build tool for modern web projects
 - **TypeScript**: For type safety and better developer experience
 - **React**: A library for building user interfaces
-- **shadcn-ui**: A component library for building accessible and customizable UI
-- **Tailwind CSS**: A utility-first CSS framework
+- **Redux**: For state management
+- **Bootstrap**: For styling and layout
+- **React Router**: For client-side routing
+- **ESLint**: For code linting and quality control
+- **Prettier**: For code formatting and consistency
 
-## How Can I Deploy This Project?
-
-Simply open [Lovable](https://lovable.dev/projects/4836a470-c1b0-4b43-91d6-e7f912d1658d) and click on Share -> Publish.
-
-## Can I Connect a Custom Domain to My Lovable Project?
-
-Yes, it is possible!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide).
 
 ## FAQs
 
