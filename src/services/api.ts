@@ -3,7 +3,7 @@ import { APIResponse, Game, Genre, ParentPlatform, Tag, Screenshot } from '@/typ
 
 // Base URL and API key for RAWG API
 const API_BASE_URL = 'https://api.rawg.io/api';
-const API_KEY = import.meta.env.VITE_RAWG_API_KEY || 'da4774eb042246f78d2c75683f1a3151'; // Fallback for development
+const API_KEY = import.meta.env.VITE_RAWG_API_KEY
 
 // Helper function to create request URLs with API key
 const createApiUrl = (endpoint: string, params: Record<string, string | number | boolean | undefined | number[]> = {}) => {
